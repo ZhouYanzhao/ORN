@@ -24,6 +24,7 @@ Network          | Params   | CIFAR-10 |
 WRN-40-4         | 8.9M     | 4.53
 WRN-40-10-dropout| 55.8M    | 3.8
 ORN-40-4(1/2)    | **4.5M** | **3.43**
+
 Table.1 Test error (%) on CIFAR10 dataset with flip/translation augmentation and mean/std normalization. (Note that the CIFAR performance of ORN in the paper is based on the ZCA-preprocessed dataset. We will update the arXiv version soon) 
 
 ![CIFAR10](cifar10.png)
