@@ -100,6 +100,8 @@ You can use [facebook.resnet.torch](https://github.com/facebook/fb.resnet.torch)
 model = require('or-resnet.lua')({tensorType='torch.CudaTensor', pretrained='or-resnet18_weights.t7'})
 ```
 
+A more specific demo notebook of using the pre-trained OR-ResNet to classify images can be found [here](classify.ipynb).
+
 ## PyTorch Implementation
 coming
 
