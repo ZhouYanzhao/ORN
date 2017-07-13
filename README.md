@@ -26,12 +26,12 @@ You can setup everything via a single command `wget -O - https://git.io/vHCMI | 
     * [optnet](https://github.com/fmassa/optimize-net): `luarocks install optnet`
 
 2. clone the torch branch: 
-  ```bash
-  # git version must be greater than 1.9.10
-  git clone https://github.com/ZhouYanzhao/ORN.git -b torch --single-branch ORN.torch
-  cd ORN.torch
-  export DIR=$(pwd)
-  ```
+    ```bash
+    # git version must be greater than 1.9.10
+    git clone https://github.com/ZhouYanzhao/ORN.git -b torch --single-branch ORN.torch
+    cd ORN.torch
+    export DIR=$(pwd)
+    ```
 
 3. install ORN: 
     ```bash
