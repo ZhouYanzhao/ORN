@@ -1,0 +1,24 @@
+# The train/test net protocol buffer definition
+net: "cnn.prototxt"
+# test_iter specifies how many forward passes the test should carry out.
+# In the case of MNIST, we have test batch size 1000 and 10 test iterations,
+# covering the full 10,000 testing images.
+test_iter: 10
+# Carry out testing every 469 training iterations (~ 1 epoch).
+test_interval: 469
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 1.0
+lr_policy: "fixed"
+momentum: 0.95
+weight_decay: 0.0005
+# Display every 469 iterations
+display: 469
+# The maximum number of iterations (~ 50 epochs)
+max_iter: 23451
+# snapshot intermediate results
+snapshot: 2345
+snapshot_prefix: "snapshot/cnn"
+# solver mode: CPU or GPU
+solver_mode: GPU
+type: "AdaDelta"
+delta: 1e-6
