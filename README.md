@@ -1,4 +1,4 @@
-# Oriented Response Networks
+# Oriented Response Networks (Torch)
 [[project]](http://zhouyanzhao.github.io/ORN) [[doc]](http://github.com/ZhouYanzhao/ORN) [[arXiv]](https://arxiv.org/pdf/1701.01833)
 
 Please check the [master branch](http://github.com/ZhouYanzhao/ORN) for more information.
