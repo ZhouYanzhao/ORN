@@ -310,7 +310,7 @@ end
 function ORConv:reset()
     local n = self.kW * self.kH * self.nInputPlane * self.nOrientation
     self.weight:normal(0, math.sqrt(2 / n))
-    self.bias:zero()
+    if self.bias then self.bias:zero() end
 end
 
 function ORConv:updateOutput(input)
