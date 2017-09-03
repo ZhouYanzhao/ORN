@@ -34,6 +34,11 @@ function BN:createIODescriptors(input)
    end
 end
 
+function BN:__tostring__()
+   return string.format('%s(%d)', torch.type(self), 
+    self.running_mean:numel())
+end
+
 -- monkey patch cudnn.convert
 local layer_list = {
   'BatchNormalization',
