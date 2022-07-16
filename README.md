@@ -1,9 +1,16 @@
 # Oriented Response Networks
-[![](https://img.shields.io/badge/torch-V1.0-green.svg)](https://github.com/ZhouYanzhao/ORN/tree/torch) [![](https://img.shields.io/badge/pytorch-alpha-blue.svg)](https://github.com/ZhouYanzhao/ORN/tree/pytorch) [![](https://img.shields.io/badge/caffe-alpha-red.svg)](https://github.com/ZhouYanzhao/ORN/tree/caffe)
+[![](https://img.shields.io/badge/torch-V1.0-green.svg)](https://github.com/ZhouYanzhao/ORN/tree/torch) [![](https://img.shields.io/badge/pytorch-alpha-blue.svg)](https://github.com/ZhouYanzhao/ORN/tree/pytorch-v2) [![](https://img.shields.io/badge/caffe-alpha-red.svg)](https://github.com/ZhouYanzhao/ORN/tree/caffe)
 
 [[Home]](http://yzhou.work) [[Project]](http://yzhou.work/ORN) [[Paper]](https://arxiv.org/pdf/1701.01833) [[Supp]](http://yzhou.work/ORN/Supplementary.pdf) [[Poster]](http://yzhou.work/ORN/0160_POSTER.pdf)
 
 ![illustration](illustration.png)
+
+## 🎉Update: Reimplemented ORN that supports modern PyTorch.
+* Tested with PyTorch 1.12.0 (Ubuntu / GTX 2080 Ti)
+* A New helper function `upgrade_to_orn` for easy model conversion.
+* Predefined ORN-upgraded models (OR-VGG, OR-ResNet, OR-Inception, OR-WRN, etc.).
+
+Please check the [pytorch-v2 branch](https://github.com/ZhouYanzhao/ORN/tree/pytorch-v2) for more details.
 
 ## Torch Implementation
 The [torch branch](https://github.com/ZhouYanzhao/ORN/tree/torch) contains:
@@ -106,7 +113,9 @@ model = require('or-resnet.lua')({tensorType='torch.CudaTensor', pretrained='or-
 
 A more specific demo notebook of using the pre-trained OR-ResNet to classify images can be found [here](classify.ipynb).
 
-## PyTorch Implementation
+## ~~PyTorch Implementation (Deprecated)~~
+**Please check the [pytorch-v2 branch](https://github.com/ZhouYanzhao/ORN/tree/pytorch-v2) for more details.**
+
 The [pytorch branch](https://github.com/ZhouYanzhao/ORN/tree/pytorch) contains:
 
 * the official **pytorch** implementation of ORN *(alpha version supports 1x1/3x3 ARFs with 4/8 orientation channels only)*.
