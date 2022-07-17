@@ -85,7 +85,7 @@ class ModelFactor(object):
             setting = self.valid_models[name]
             base = getattr(M, setting['base'])
             def _handler():
-                model = base(weights=None)
+                model = base()
                 if re.match(self.regex['alexnet'], setting['base']):
                     upgrade_to_orn(model, num_orientation=setting['num_orientation'], classifier=model.classifier[0], features=model.avgpool, invariant_encoding=setting['invairant_encoding'])
                 elif re.match(self.regex['vgg'], setting['base']):
